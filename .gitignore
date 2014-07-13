@@ -1,3 +1,7 @@
+# No backups
+*~
+
+# Only Python source
 *.py[cod]
 
 # C extensions
