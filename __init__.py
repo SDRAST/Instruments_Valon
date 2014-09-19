@@ -32,7 +32,8 @@ Things to do
 """
 import logging
 from time import sleep
-from Observatory import ClassInstance, ObservatoryError, Synthesizer
+from MonitorControl import ClassInstance, ObservatoryError
+from Electronics.Instruments import Synthesizer
 import valon_synth as vs
 from Data_Reduction import nearest_index
 
@@ -246,7 +247,7 @@ class Valon5007(vs.Synthesizer):
       else:
         raise ObservatoryError(param,"setting failed")
 
-class Valon1(Valon5007,Synthesizer):
+class Valon1(Synthesizer):
   """
   Each output of the Valon 5005 is treated as a logically separate
   synthesizer
@@ -296,7 +297,7 @@ class Valon1(Valon5007,Synthesizer):
     """
     return "Valon5007 synth 1"
 
-class Valon2(Valon5007,Synthesizer):
+class Valon2(Synthesizer):
   """
   Each output of the Valon 5005 is treated as a logically separate
   synthesizer
