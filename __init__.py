@@ -291,6 +291,12 @@ class Valon1(Synthesizer):
     """
     return self.hw.update_synth_status(1)
 
+  def __repr__(self):
+    return self. __unicode__()
+
+  def __str__(self):
+    return self. __unicode__()
+    
   def __unicode__(self):
     """
     Return identifier
@@ -339,6 +345,12 @@ class Valon2(Synthesizer):
     Refresh all the configuration parameters
     """
     return self.hw.update_synth_status(2)
+
+  def __repr__(self):
+    return self. __unicode__()
+
+  def __str__(self):
+    return self. __unicode__()
 
   def __unicode__(self):
     """
