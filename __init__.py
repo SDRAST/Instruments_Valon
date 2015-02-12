@@ -37,7 +37,6 @@ from Electronics.Instruments import Synthesizer
 import valon_synth as vs
 from Data_Reduction import nearest_index
 
-#mylogger = logging.getLogger("__main__."+__name__)
 module_logger = logging.getLogger(__name__)
 
 ############################## Valon Synthesizers #############################
